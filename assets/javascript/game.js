@@ -23,16 +23,16 @@ $(document).ready(function () {
         console.log(userTotalNumber);
 
         if (userTotalNumber === newRandomNumber) {
-            userTotalNumber = 0;
             wins++;
             console.log(wins);
             $("#p1").text("Wins:   " + wins);
+            reset();
         }
         if (userTotalNumber > newRandomNumber) {
-            userTotalNumber = 0;
             loses++;
             console.log(loses);
             $("#p2").text("Loses:   " + loses);
+            reset();
         }
 
     });
@@ -43,16 +43,16 @@ $(document).ready(function () {
         console.log(userTotalNumber);
 
         if (userTotalNumber === newRandomNumber) {
-            userTotalNumber = 0;
             wins++;
             console.log(wins);
             $("#p1").text("Wins:   " + wins);
+            reset();
         }
         if (userTotalNumber > newRandomNumber) {
-            userTotalNumber = 0;
             loses++;
             console.log(loses);
             $("#p2").text("Loses:   " + loses);
+            reset();
         }
 
     });
@@ -63,16 +63,16 @@ $(document).ready(function () {
         console.log(userTotalNumber);
 
         if (userTotalNumber === newRandomNumber) {
-            userTotalNumber = 0;
             wins++;
-            console.log(wins);
+            console.log("wins");
             $("#p1").text("Wins:   " + wins);
+            reset();
         }
         if (userTotalNumber > newRandomNumber) {
-            userTotalNumber = 0;
             loses++;
-            console.log(loses);
+            console.log("loses");
             $("#p2").text("Loses:   " + loses);
+            reset();
         }
 
     });
@@ -83,19 +83,24 @@ $(document).ready(function () {
         console.log(userTotalNumber);
 
         if (userTotalNumber === newRandomNumber) {
-            userTotalNumber = 0;
             wins++;
             console.log(wins);
             $("#p1").text("Wins:   " + wins);
+            reset();
         }
         if (userTotalNumber > newRandomNumber) {
-            userTotalNumber = 0;
             loses++;
             console.log(loses);
             $("#p2").text("Loses:   " + loses);
+            reset();
         }
 
     });
+
+    function reset() {
+        userTotalNumber = 0;
+        $('#finalscore').text(userTotalNumber);
+    }
 
 
 
