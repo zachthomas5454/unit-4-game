@@ -1,0 +1,66 @@
+body{
+    background-image: url("https://blogstudio.s3.amazonaws.com/ancientelementcreations/cc97487bc7c5242d9d0ed2e91f8c1509.jpg");
+    background-size: 100%;
+}
+
+
+#Head{
+    color: white;
+    background-color: tomato;
+    width: 270px;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+#GameRules{
+    color: green;
+    background-color: peachpuff;
+    width: 550px;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+#currentpoints{
+    color: black;
+    background-color: mediumseagreen;
+    width: 150px;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+#currentscore{
+    color: black;
+    background-color: mediumturquoise;
+    width: 150px;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+#totalscore{
+    color: black;
+    background-color: darkgreen;
+    width: 150px;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+#finalscore{
+    color: black;
+    background-color: darkgreen;
+    width: 150px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+
+#crystala,#crystalb,#crystalc,#crystald{
+
+    height:80px;
+    width:120px;
+    background-color: white;
+    margin: 25px 0px 25px 25px;
+    
+
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector !</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reet.css" />
+</head>
+
+
+<body>
+    <h1 id=Head>CrystalsCollector !</h1>
+    
+    <div id=GameRules>
+        <p>The player will be shown a random number at the start of the game.</p>
+        <p>There will be four crystals displayed as buttons on the page. When the player
+            clicks on a crystal, it will add a specific amount of points to the player's total score.</p>
+        <p>The player wins if their total score matches the random number from the beginning of the game.
+            The player loses if their score goes above the random number.</p>
+        <p>Your game will hide this amount until the player clicks a crystal.</p>
+        <p>When the game begins again, the player should see a new random number for each crystal.</p><br>
+    </div> <br>
+
+    <div id=currentpoints> <h3>Current Points</h3>
+    </div> <br> 
+
+    <div id=currentscore>Wins: <br> Losses:
+    </div>  <br>
+
+    <div id=buttons>
+
+        <button id=crystala>  <img src="assets/images/crystal-blue.jpg" height="70px" width="100px">  </button>
+        <button id=crystalb>  <img src="assets/images/crystal-green.png" height="70px" width="100px"> </button>
+        <button id=crystalc>  <img src="assets/images/crystal-red.png" height="70px" width="100px">   </button>
+        <button id=crystald>   <img src="assets/images/crystal-yellow.jpg" height="70px" width="100px">   </button>
+
+    </div>  <br>
+
+    <div id=totalscore><h3>Your total score is:</h3></div>  <br>
+
+    <div id=finalscore>SCORE</div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.3.js"
+        integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
