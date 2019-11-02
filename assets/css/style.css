@@ -3,14 +3,19 @@ body{
     background-size: 100%;
 }
 
+.gifimage{
+    margin: 10px 25px 25px 25px;
+}
 
 #Head{
+    float: left;
     color: white;
-    background-color: tomato;
     width: 270px;
     padding: 10px;
-    margin-left: 25px;
+    margin: 25px;
+    background-image: linear-gradient( to bottom right, orange, darkred);
 }
+
 
 #GameRules{
     color: green;
@@ -18,6 +23,7 @@ body{
     width: 550px;
     padding: 10px;
     margin-left: 25px;
+    background-image: linear-gradient( 180deg, lightgrey, gray);
 }
 
 #currentpoints{
@@ -54,9 +60,10 @@ body{
 }
 
 #buttons{
-    background-color: darkorange;
     margin-left: 25px;
     width: 620px;
+    background-image: linear-gradient( to bottom right, orange, brown
+    );
 }
 
 
