@@ -42,12 +42,38 @@ $(document).ready(function () {
         $("#finalscore").text(userTotalNumber);
         console.log(userTotalNumber);
 
+        if (userTotalNumber === newRandomNumber) {
+            userTotalNumber = 0;
+            wins++;
+            console.log(wins);
+            $("#p1").text("Wins:   " + wins);
+        }
+        if (userTotalNumber > newRandomNumber) {
+            userTotalNumber = 0;
+            loses++;
+            console.log(loses);
+            $("#p2").text("Loses:   " + loses);
+        }
+
     });
 
     $("#crystalc").on("click", function () {
         userTotalNumber = userTotalNumber + cRandomNumber;
         $("#finalscore").text(userTotalNumber);
-        console.log(userTotalNumber)
+        console.log(userTotalNumber);
+
+        if (userTotalNumber === newRandomNumber) {
+            userTotalNumber = 0;
+            wins++;
+            console.log(wins);
+            $("#p1").text("Wins:   " + wins);
+        }
+        if (userTotalNumber > newRandomNumber) {
+            userTotalNumber = 0;
+            loses++;
+            console.log(loses);
+            $("#p2").text("Loses:   " + loses);
+        }
 
     });
 
@@ -55,6 +81,19 @@ $(document).ready(function () {
         userTotalNumber = userTotalNumber + dRandomNumber;
         $("#finalscore").text(userTotalNumber);
         console.log(userTotalNumber);
+
+        if (userTotalNumber === newRandomNumber) {
+            userTotalNumber = 0;
+            wins++;
+            console.log(wins);
+            $("#p1").text("Wins:   " + wins);
+        }
+        if (userTotalNumber > newRandomNumber) {
+            userTotalNumber = 0;
+            loses++;
+            console.log(loses);
+            $("#p2").text("Loses:   " + loses);
+        }
 
     });
 
