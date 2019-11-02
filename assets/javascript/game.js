@@ -8,31 +8,28 @@ $(document).ready(function () {
     var cRandomNumber = Math.floor(Math.random() * 12) + 1;
     var dRandomNumber = Math.floor(Math.random() * 12) + 1;
 
-
     var wins = 0;
     var loses = 0;
     var userTotalNumber = 0;
 
     $("#currentpoints").text(newRandomNumber);
 
-
     // Crystal Button on click adds the respective random value to total points
     $("#crystala").on("click", function () {
         userTotalNumber = userTotalNumber + aRandomNumber;
         $("#finalscore").text(userTotalNumber);
-        console.log(userTotalNumber);
-
+        
         if (userTotalNumber === newRandomNumber) {
             wins++;
-            console.log(wins);
             $("#p1").text("Wins:   " + wins);
             reset();
+            giveRandomNumber();
         }
         if (userTotalNumber > newRandomNumber) {
             loses++;
-            console.log(loses);
             $("#p2").text("Loses:   " + loses);
             reset();
+            giveRandomNumber();
         }
 
     });
@@ -40,19 +37,18 @@ $(document).ready(function () {
     $("#crystalb").on("click", function () {
         userTotalNumber = userTotalNumber + bRandomNumber;
         $("#finalscore").text(userTotalNumber);
-        console.log(userTotalNumber);
-
+        
         if (userTotalNumber === newRandomNumber) {
             wins++;
-            console.log(wins);
             $("#p1").text("Wins:   " + wins);
             reset();
+            giveRandomNumber();
         }
         if (userTotalNumber > newRandomNumber) {
             loses++;
-            console.log(loses);
             $("#p2").text("Loses:   " + loses);
             reset();
+            giveRandomNumber();
         }
 
     });
@@ -60,19 +56,18 @@ $(document).ready(function () {
     $("#crystalc").on("click", function () {
         userTotalNumber = userTotalNumber + cRandomNumber;
         $("#finalscore").text(userTotalNumber);
-        console.log(userTotalNumber);
-
+        
         if (userTotalNumber === newRandomNumber) {
             wins++;
-            console.log("wins");
             $("#p1").text("Wins:   " + wins);
             reset();
+            giveRandomNumber();
         }
         if (userTotalNumber > newRandomNumber) {
             loses++;
-            console.log("loses");
             $("#p2").text("Loses:   " + loses);
             reset();
+            giveRandomNumber();
         }
 
     });
@@ -80,19 +75,18 @@ $(document).ready(function () {
     $("#crystald").on("click", function () {
         userTotalNumber = userTotalNumber + dRandomNumber;
         $("#finalscore").text(userTotalNumber);
-        console.log(userTotalNumber);
-
+        
         if (userTotalNumber === newRandomNumber) {
             wins++;
-            console.log(wins);
             $("#p1").text("Wins:   " + wins);
             reset();
+            giveRandomNumber();
         }
         if (userTotalNumber > newRandomNumber) {
             loses++;
-            console.log(loses);
             $("#p2").text("Loses:   " + loses);
             reset();
+            giveRandomNumber();
         }
 
     });
@@ -100,6 +94,14 @@ $(document).ready(function () {
     function reset() {
         userTotalNumber = 0;
         $('#finalscore').text(userTotalNumber);
+    }
+
+    function giveRandomNumber() {
+        newRandomNumber = Math.floor(Math.random() * 102) + 19;
+        aRandomNumber = Math.floor(Math.random() * 12) + 1;
+        bRandomNumber = Math.floor(Math.random() * 12) + 1;
+        cRandomNumber = Math.floor(Math.random() * 12) + 1;
+        dRandomNumber = Math.floor(Math.random() * 12) + 1;
     }
 
 
