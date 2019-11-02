@@ -53,6 +53,12 @@ body{
     margin-bottom: 50px;
 }
 
+#buttons{
+    background-color: darkorange;
+    margin-left: 25px;
+    width: 620px;
+}
+
 
 #crystala,#crystalb,#crystalc,#crystald{
 
