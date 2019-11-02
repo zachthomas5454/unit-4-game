@@ -102,6 +102,7 @@ $(document).ready(function () {
         bRandomNumber = Math.floor(Math.random() * 12) + 1;
         cRandomNumber = Math.floor(Math.random() * 12) + 1;
         dRandomNumber = Math.floor(Math.random() * 12) + 1;
+        $("#currentpoints").text(newRandomNumber);
     }
 
 
